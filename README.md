@@ -23,6 +23,9 @@ It demonstrates real-world SOC tasks like **log monitoring, alerting, incident i
 | Threat Intelligence | Maltego |
 | Network / Logs | Windows Security Logs, TCP/IP, HTTP/HTTPS |
 | Attack Simulation | Brute-force login scripts on Kali Linux |
+---
+---
+## Project Structure
 
 SOC_Threat_Detection_Lab/
 ├── Windows_Logs/ # Sample security log files
@@ -32,7 +35,6 @@ SOC_Threat_Detection_Lab/
 ├── Maltego_Mappings/ # OSINT mapping files
 └── README.md # Project documentation
 
----
 
 ---
 

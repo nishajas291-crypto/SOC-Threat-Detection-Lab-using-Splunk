@@ -66,7 +66,7 @@ SOC_Threat_Detection_Lab/
 ---
 
 ## GitHub Link
-
+https://github.com/nishajas291-crypto/SOC-Threat-Detection-Lab-using-Splunk.git
 ---
 
 **Tips for GitHub:**  

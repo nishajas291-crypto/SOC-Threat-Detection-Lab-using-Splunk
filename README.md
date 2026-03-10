@@ -28,13 +28,12 @@ It demonstrates real-world SOC tasks like **log monitoring, alerting, incident i
 ## Project Structure
 
 SOC_Threat_Detection_Lab/
-├── Windows_Logs/ # Sample security log files
-├── Splunk_Dashboards/ # JSON and configuration for dashboards
-├── Alerts_Config/ # Pre-configured Splunk alerts
-├── Kali_Scripts/ # Scripts to generate simulated attacks
-├── Maltego_Mappings/ # OSINT mapping files
-└── README.md # Project documentation
-
+├── Windows_Logs/           # Sample security log files
+├── Splunk_Dashboards/      # JSON and configuration for dashboards
+├── Alerts_Config/          # Pre-configured Splunk alerts
+├── Kali_Scripts/           # Scripts to generate simulated attacks
+├── Maltego_Mappings/       # OSINT mapping files
+└── README.md               # Project documentation
 
 ---
 

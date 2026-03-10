@@ -1,75 +1,211 @@
-# SOC Threat Detection Lab using Splunk
+Project Overview
 
-## Project Overview
-This project simulates a **Security Operations Center (SOC)** environment to **collect, analyze, and respond** to security events using **Splunk**.  
-It demonstrates real-world SOC tasks like **log monitoring, alerting, incident investigation, and threat visualization**.
+This project demonstrates a Security Operations Center (SOC) threat detection lab built using Splunk Enterprise to monitor, analyze, and detect suspicious activities from Windows Security Logs.
 
----
+The lab simulates multiple failed login attempts to replicate a brute-force attack scenario and demonstrates how a SOC analyst can detect, investigate, and respond using SIEM tools.
 
-## Features
-- Collect and analyze **Windows Security Logs**.  
-- Generate **simulated attack events** using Kali Linux (e.g., failed logins, brute-force attempts).  
-- Create **interactive dashboards** to monitor authentication behavior.  
-- Configure **real-time alerts** for suspicious activity.  
-- Perform **OSINT mapping** with Maltego to visualize threat actor relationships.
+This project provides practical experience in log analysis, threat detection, SIEM monitoring, dashboard creation, and alert configuration.
 
----
+Objectives
 
-## Tools & Technologies
-| Category | Tools / Technology |
-|----------|------------------|
-| SIEM / Monitoring | Splunk |
-| Operating System | Kali Linux, Windows |
-| Threat Intelligence | Maltego |
-| Network / Logs | Windows Security Logs, TCP/IP, HTTP/HTTPS |
-| Attack Simulation | Brute-force login scripts on Kali Linux |
----
----
-## Project Structure
+Build a basic SOC monitoring environment
 
-SOC_Threat_Detection_Lab/
-├── Windows_Logs/           # Sample security log files
-├── Splunk_Dashboards/      # JSON and configuration for dashboards
-├── Alerts_Config/          # Pre-configured Splunk alerts
-├── Kali_Scripts/           # Scripts to generate simulated attacks
-├── Maltego_Mappings/       # OSINT mapping files
-└── README.md               # Project documentation
+Collect and analyze Windows Security Event Logs
 
----
+Detect suspicious authentication activity
 
-## Implementation Steps
-1. **Log Collection:** Import Windows Security Logs into Splunk for analysis.  
-2. **Event Simulation:** Run Kali Linux scripts to generate suspicious events.  
-3. **Log Analysis:** Detect failed logins and abnormal authentication patterns.  
-4. **Dashboard Creation:** Build dashboards to visualize login trends and security events.  
-5. **Alert Configuration:** Set real-time alerts for brute-force or suspicious activity.  
-6. **Threat Mapping:** Use Maltego to map potential threat actors and connections.
+Create security monitoring dashboards
 
----
+Configure automated threat detection alerts
 
-## Results
-- Detected **abnormal authentication attempts** and brute-force simulations.  
-- Created **custom dashboards** for real-time monitoring.  
-- Configured **alerts** to proactively notify analysts of security events.  
-- Applied **OSINT techniques** to map threat actor relationships.
+Tools & Technologies
 
----
+Splunk Enterprise
 
-## Key Skills & Concepts
-- SOC Operations  
-- Security Monitoring & SIEM (Splunk)  
-- Incident Investigation & Threat Detection  
-- Log Analysis & Dashboard Creation  
-- Kali Linux & Attack Simulation  
-- OSINT (Maltego)
+Splunk Universal Forwarder
 
----
+Windows 10
 
-## GitHub Link
-https://github.com/nishajas291-crypto/SOC-Threat-Detection-Lab-using-Splunk.git
----
+Virtual Machine Environment
 
-**Tips for GitHub:**  
-- Add **screenshots of dashboards** for visual impact.  
-- Include **sample log files** for recruiters to explore.  
-- Optional: record a **demo GIF** showing alerts or dashboards in action.
+Lab Architecture
+
+SOC Environment consists of:
+
+1. Splunk Server
+
+Collects logs
+
+Analyzes security events
+
+Generates alerts
+
+2. Windows Machine
+
+Generates authentication logs
+
+Sends security logs to Splunk
+
+3. Splunk Universal Forwarder
+
+Collects Windows logs
+
+Forwards logs to Splunk SIEM
+
+Windows Machine
+      │
+      │  Security Logs
+      ▼
+Splunk Universal Forwarder
+      │
+      ▼
+Splunk Enterprise (SIEM)
+      │
+      ├── Log Analysis
+      ├── Dashboards
+      └── Alerts
+Implementation Steps
+1. Lab Environment Setup
+
+Installed Splunk Enterprise on the main system.
+
+Set up a Windows machine to generate security logs.
+
+Created a small virtual lab environment for monitoring and analysis.
+
+2. Windows Log Collection Setup
+
+Installed Splunk Universal Forwarder on the Windows system.
+
+Configured the forwarder to collect Windows Security Event Logs.
+
+Connected the forwarder to the Splunk server.
+
+3. Log Ingestion
+
+Verified that Windows logs were successfully ingested into Splunk Web.
+
+Created a custom index:
+
+index=windows_logs
+
+Confirmed that security events were visible in Splunk search.
+
+4. Suspicious Activity Simulation
+
+To simulate suspicious authentication activity:
+
+Multiple incorrect login attempts were performed on the Windows system.
+
+This generated security events that mimic brute-force attack patterns.
+
+These events were captured and analyzed using Splunk.
+
+Log Analysis
+
+The following Windows Event IDs were analyzed:
+
+Event ID	Description
+4625	Failed Login Attempt
+4624	Successful Login
+4634	User Logoff
+4672	Special Privileges Assigned
+
+Example Splunk Query:
+
+index=windows_logs EventCode=4625
+
+This query displays all failed login attempts.
+
+Dashboard Creation
+
+SOC monitoring dashboards were created to visualize security activity.
+
+Dashboard Panels:
+
+Failed Login Attempts
+
+Login Activity Timeline
+
+Top Users with Failed Logins
+
+Authentication Activity Overview
+
+These dashboards help SOC analysts quickly detect suspicious patterns.
+
+Alert Configuration
+
+An automated alert rule was configured in Splunk Enterprise.
+
+Alert Condition
+
+Trigger an alert when:
+
+More than 5 failed login attempts occur within 1 minute
+
+Example detection query:
+
+index=windows_logs EventCode=4625
+| stats count by user
+| where count > 5
+
+This helps detect possible brute-force attacks.
+
+Investigation Process
+
+SOC investigation steps included:
+
+Identify repeated failed login attempts
+
+Check user accounts involved
+
+Analyze login patterns
+
+Investigate abnormal authentication activity
+
+Document incident findings
+
+Key Skills Demonstrated
+
+SIEM Monitoring
+
+Log Analysis
+
+Threat Detection
+
+Incident Investigation
+
+Security Dashboard Creation
+
+Alert Configuration
+
+SOC Operations
+
+Project Outcome
+
+This project demonstrates hands-on experience with Security Operations Center workflows including:
+
+Monitoring Windows security logs
+
+Detecting suspicious authentication activity
+
+Investigating security events
+
+Configuring automated alerts
+
+It simulates a real-world SOC analyst workflow using Splunk Enterprise.
+
+Future Improvements
+
+Integrate additional log sources
+
+Implement advanced threat detection rules
+
+Add automated incident response
+
+Integrate threat intelligence feeds
+
+Author
+
+Jas
+Cyber Security Enthusiast | SOC Analyst Aspirant

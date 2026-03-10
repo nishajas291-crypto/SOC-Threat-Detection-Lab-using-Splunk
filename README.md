@@ -41,7 +41,6 @@ Develop knowledge of incident investigation procedures for security events.
 Apply OSINT techniques for threat actor analysis.
 
 Project Structure
-
 SOC_Threat_Detection_Lab/
 │
 ├── Windows_Logs/               # Sample Windows security log files
@@ -50,12 +49,11 @@ SOC_Threat_Detection_Lab/
 ├── Kali_Scripts/               # Scripts to generate simulated attacks
 ├── Maltego_Mappings/           # OSINT threat maps and entity relationships
 └── README.md                   # Project documentation
-
 Implementation Steps
 
 Log Collection: Import Windows security logs into Splunk.
 
-Event Simulation: Use Kali Linux to generate test events like failed logins or abnormal authentication.
+Event Simulation: Use Kali Linux to generate test events, such as failed logins or anomalous authentication attempts.
 
 Analysis: Perform log analysis in Splunk to detect suspicious patterns.
 

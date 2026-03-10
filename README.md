@@ -1,81 +1,74 @@
-# SOC-Threat-Detection-Lab-using-Splunk
-Project Overview
-This project simulates a Security Operations Center (SOC) environment using Splunk to monitor, analyze, and detect potential threats from Windows security logs. It demonstrates end-to-end threat detection, log analysis, alerting, and incident investigation, providing practical experience in a SOC analyst workflow.
+# SOC Threat Detection Lab using Splunk
 
-Key Features
+## Project Overview
+This project simulates a **Security Operations Center (SOC)** environment to **collect, analyze, and respond** to security events using **Splunk**.  
+It demonstrates real-world SOC tasks like **log monitoring, alerting, incident investigation, and threat visualization**.
 
-Simulated SOC monitoring environment using Splunk and Kali Linux.
+---
 
-Collection and analysis of Windows security logs to identify suspicious activity.
+## Features
+- Collect and analyze **Windows Security Logs**.  
+- Generate **simulated attack events** using Kali Linux (e.g., failed logins, brute-force attempts).  
+- Create **interactive dashboards** to monitor authentication behavior.  
+- Configure **real-time alerts** for suspicious activity.  
+- Perform **OSINT mapping** with Maltego to visualize threat actor relationships.
 
-Generation of security events to simulate attacks, such as brute-force login attempts.
+---
 
-Creation of interactive dashboards to visualize security events and authentication behavior.
+## Tools & Technologies
+| Category | Tools / Technology |
+|----------|------------------|
+| SIEM / Monitoring | Splunk |
+| Operating System | Kali Linux, Windows |
+| Threat Intelligence | Maltego |
+| Network / Logs | Windows Security Logs, TCP/IP, HTTP/HTTPS |
+| Attack Simulation | Brute-force login scripts on Kali Linux |
 
-Configuration of alerts for abnormal activity and potential security breaches.
-
-Use of OSINT (Maltego) for mapping potential threat actors and connections.
-
-Tools & Technologies
-
-SIEM & Monitoring: Splunk
-
-Operating System: Kali Linux, Windows
-
-Threat Intelligence / OSINT: Maltego
-
-Protocols & Logs: Windows Security Logs, TCP/IP, HTTP/HTTPS
-
-Attack Simulation: Brute-force attempts, abnormal login generation
-
-Objectives & Learning Outcomes
-
-Understand and implement SOC monitoring workflows.
-
-Gain hands-on experience in security log analysis and identifying anomalous behavior.
-
-Learn to create custom dashboards and configure actionable alerts in Splunk.
-
-Develop knowledge of incident investigation procedures for security events.
-
-Apply OSINT techniques for threat actor analysis.
-
-Project Structure
 SOC_Threat_Detection_Lab/
-│
-├── Windows_Logs/               # Sample Windows security log files
-├── Splunk_Dashboards/          # Dashboard JSON and configuration files
-├── Alerts_Config/              # Pre-configured Splunk alert settings
-├── Kali_Scripts/               # Scripts to generate simulated attacks
-├── Maltego_Mappings/           # OSINT threat maps and entity relationships
-└── README.md                   # Project documentation
-Implementation Steps
+├── Windows_Logs/ # Sample security log files
+├── Splunk_Dashboards/ # JSON and configuration for dashboards
+├── Alerts_Config/ # Pre-configured Splunk alerts
+├── Kali_Scripts/ # Scripts to generate simulated attacks
+├── Maltego_Mappings/ # OSINT mapping files
+└── README.md # Project documentation
 
-Log Collection: Import Windows security logs into Splunk.
+---
 
-Event Simulation: Use Kali Linux to generate test events, such as failed logins or anomalous authentication attempts.
+---
 
-Analysis: Perform log analysis in Splunk to detect suspicious patterns.
+## Implementation Steps
+1. **Log Collection:** Import Windows Security Logs into Splunk for analysis.  
+2. **Event Simulation:** Run Kali Linux scripts to generate suspicious events.  
+3. **Log Analysis:** Detect failed logins and abnormal authentication patterns.  
+4. **Dashboard Creation:** Build dashboards to visualize login trends and security events.  
+5. **Alert Configuration:** Set real-time alerts for brute-force or suspicious activity.  
+6. **Threat Mapping:** Use Maltego to map potential threat actors and connections.
 
-Dashboard Creation: Build visual dashboards to monitor authentication activity and security events.
+---
 
-Alert Configuration: Set alerts to notify for brute-force attempts or other critical anomalies.
+## Results
+- Detected **abnormal authentication attempts** and brute-force simulations.  
+- Created **custom dashboards** for real-time monitoring.  
+- Configured **alerts** to proactively notify analysts of security events.  
+- Applied **OSINT techniques** to map threat actor relationships.
 
-Threat Mapping (OSINT): Use Maltego to map potential threat actors and analyze relationships.
+---
 
-Results / Impact
+## Key Skills & Concepts
+- SOC Operations  
+- Security Monitoring & SIEM (Splunk)  
+- Incident Investigation & Threat Detection  
+- Log Analysis & Dashboard Creation  
+- Kali Linux & Attack Simulation  
+- OSINT (Maltego)
 
-Successfully simulated SOC monitoring for Windows security environments.
+---
 
-Detected abnormal authentication behaviors and potential brute-force attacks.
+## GitHub Link
 
-Visual dashboards and alerts provided real-time situational awareness for SOC analysts.
+---
 
-Strengthened understanding of SOC operations, threat intelligence, and incident response workflows.
-
-Skills & Keywords Highlighted
-SOC Analyst | Security Monitoring | Splunk | SIEM | Log Analysis | Threat Detection | Incident Investigation | Brute-Force Alerts | Dashboard Creation | Kali Linux | Maltego | OSINT | Windows Security Logs
-
-
-Conclusion
-This project provides hands-on, practical experience in SOC operations and security monitoring, simulating real-world scenarios to prepare for roles in cybersecurity, SOC L1 analyst positions, and incident response teams.
+**Tips for GitHub:**  
+- Add **screenshots of dashboards** for visual impact.  
+- Include **sample log files** for recruiters to explore.  
+- Optional: record a **demo GIF** showing alerts or dashboards in action.

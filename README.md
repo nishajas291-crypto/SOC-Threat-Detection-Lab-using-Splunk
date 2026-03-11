@@ -5,9 +5,9 @@
 
 ## Project Overview
 
-This project demonstrates a **Security Operations Center (SOC) threat detection lab** built using **Splunk Enterprise** to monitor, analyze, and detect suspicious activities from **Windows Security Logs**.
+This project demonstrates a Security Operations Center (SOC) threat detection lab built with Splunk Enterprise to monitor, analyze, and detect suspicious activity in Windows Security Logs.
 
-The lab simulates **multiple failed login attempts** to replicate a **brute-force attack scenario** and demonstrates how a SOC analyst can detect, investigate, and respond using SIEM tools.
+The lab simulates multiple failed login attempts to replicate a brute-force attack scenario and demonstrates how a SOC analyst can detect, investigate, and respond using SIEM tools.
 
 This project provides practical experience in **log analysis, threat detection, SIEM monitoring, dashboard creation, and alert configuration**.
 
@@ -34,7 +34,7 @@ This project provides practical experience in **log analysis, threat detection, 
 
 # Lab Architecture
 
-SOC Environment consists of:
+The SOC Environment consists of:
 
 **1. Splunk Server**
 
@@ -195,7 +195,7 @@ SOC investigation steps included:
 
 # Project Outcome
 
-This project demonstrates hands-on experience with **Security Operations Center workflows** including:
+This project demonstrates hands-on experience with **Security Operations Center workflows**, including:
 
 * Monitoring Windows security logs
 * Detecting suspicious authentication activity
@@ -217,10 +217,10 @@ It simulates a **real-world SOC analyst workflow using Splunk Enterprise**.
 
 # Author
 
-**Jas**
+**Jasmine Nisha**
 Cyber Security Enthusiast | SOC Analyst Aspirant
 
 ---
 
 
-These will make your **GitHub look like an experienced SOC analyst profile.**
+

@@ -1,0 +1,18 @@
+{
+  "dashboard_name": "SOC Threat Detection Dashboard",
+  "description": "Splunk dashboard for monitoring Windows security logs and detecting brute force login attempts.",
+  "panels": [
+    {
+      "title": "Failed Login Attempts",
+      "search_query": "index=wineventlog EventCode=4625 | stats count by Account_Name, Source_Network_Address"
+    },
+    {
+      "title": "Successful Login Attempts",
+      "search_query": "index=wineventlog EventCode=4624 | stats count by Account_Name, Source_Network_Address"
+    },
+    {
+      "title": "Brute Force Detection",
+      "search_query": "index=wineventlog EventCode=4625 | stats count by Source_Network_Address | where count > 5"
+    }
+  ]
+}

@@ -221,7 +221,5 @@ It simulates a **real-world SOC analyst workflow using Splunk Enterprise**.
 Cyber Security Enthusiast | SOC Analyst Aspirant
 
 ---
-
-Images
-https://github.com/nishajas291-crypto/SOC-Threat-Detection-Lab-using-Splunk/blob/main/Screenschots/splunk-enterprise-login-page.png?raw=true
+![image alt]([image_url](https://github.com/nishajas291-crypto/SOC-Threat-Detection-Lab-using-Splunk/blob/099129bcb4fcbda6cc907b3b3afc101e704e88e3/Screenschots/windows-event-viewer-overview.png))
 

@@ -222,3 +222,5 @@ Cyber Security Enthusiast | SOC Analyst Aspirant
 
 ---
 
+Images
+![image alt](https://github.com/nishajas291-crypto/SOC-Threat-Detection-Lab-using-Splunk/blob/d42931f206d5e558b0d0c28ace2ed927eecda78e/Screenschots/windows-event-viewer-log-failure.png)

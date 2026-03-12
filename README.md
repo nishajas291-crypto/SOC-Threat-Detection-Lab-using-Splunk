@@ -224,3 +224,4 @@ Cyber Security Enthusiast | SOC Analyst Aspirant
 
 Images
 ![image alt](https://github.com/nishajas291-crypto/SOC-Threat-Detection-Lab-using-Splunk/blob/d42931f206d5e558b0d0c28ace2ed927eecda78e/Screenschots/windows-event-viewer-log-failure.png)
+ ![image alt](https://github.com/nishajas291-crypto/SOC-Threat-Detection-Lab-using-Splunk/blob/084d7bb65ea5faba0ca502837c08b7fa9bd26b48/Screenschots/windows-event-viewer-log-failure.png)

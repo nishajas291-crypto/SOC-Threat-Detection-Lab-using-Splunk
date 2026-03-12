@@ -1,7 +1,0 @@
-[brute_force_alert]
-alert_name = Brute Force Login Detection
-search_query = index=wineventlog EventCode=4625 | stats count by Source_Network_Address | where count > 5
-trigger_condition = results > 0
-alert_type = real_time
-action = email_notification
-description = Detects multiple failed login attempts indicating a possible brute force attack.

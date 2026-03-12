@@ -222,7 +222,5 @@ Cyber Security Enthusiast | SOC Analyst Aspirant
 
 ---
 
-Images
-![Uploading splunk-enterprise-login-page.png…]()
 
 
